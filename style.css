@@ -1,35 +1,58 @@
 #homepage {
   background-color: #000000;
 }
-#nav {
-  background-color: #000000;
-  margin-top: 0.5cm;
+body {
+  margin: 0px;
 }
 #nav .container-fluid {
-  background-color: #000000;
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: stretch;
+  width: 100%;
   position: fixed;
   top: 0;
   z-index: 1;
+  background-color: #000000;
 }
 #nav img {
-  width: 74px;
-  height: 60px;
+  width: 60px;
+  height: 65px;
+  margin-left: 10px;
 }
-.nav-link .active {
-  font-size: 25px;
+button {
+  display: none;
 }
-.home img {
-  width: 100%;
+#desktop {
+  display: flex;
+  flex-basis: auto;
+  flex-grow: 1;
+  align-items: center;
 }
-#navbar1 a {
+#nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+#desktop a {
   text-decoration: none;
   color: rgb(255, 90, 7);
   font-family: "Bruno Ace", cursive;
-  margin-left: 70px;
   font-size: 25px;
 }
+#mobile {
+  display: none;
+}
+#homeimage img {
+  width: 100%;
+  vertical-align: middle;
+  margin-top: 1.4cm;
+}
 .heading {
-  margin-top: 0.8cm;
+  margin-top: 2cm;
   text-align: center;
   font-size: 50px;
   color: rgb(255, 90, 7);
@@ -39,6 +62,7 @@
   display: flex;
   flex-wrap: wrap;
   text-align: justify;
+  font-size: 20;
 }
 #about img {
   float: left;
@@ -53,13 +77,14 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  gap: 5cm;
+  gap: 3cm;
 }
 .club-image {
   width: 300px;
   height: 300px;
   border: 5px ridge black;
 }
+/*     Gallery      */
 #gallery {
   display: flex;
   flex-wrap: wrap;
@@ -68,27 +93,53 @@
   justify-content: center;
   gap: 5cm;
 }
-.gallery-image {
-  height: 162px;
+#Gallery .card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  border: 5px groove beige;
+  width: 18rem;
+  height: 22rem;
 }
 
-#Gallery .card {
+.gallery-image {
+  height: 162px;
   width: 18rem;
 }
-#Gallery .card a {
-  border: 2px solid rgb(255, 90, 7);
-  color: black;
+#gallery .card-body {
+  margin-bottom: 4rem;
+  margin-left: 2rem;
 }
+#Gallery .card-body div {
+  display: flex;
+  width: 7rem;
+  height: 2rem;
+  border: 2px solid rgb(255, 90, 7);
+  border-radius: 0.2cm;
+  align-items: center;
+}
+#Gallery .card a {
+  font-size: 20;
+  margin-left: 0.1cm;
+  color: rgba(49, 46, 46, 0.734);
+  text-decoration: none;
+}
+.card a:hover {
+  background-color: rgb(255, 90, 7);
+  color: white;
+}
+#gallery h5 {
+  font-size: 22;
+  margin-left: 0.3cm;
+}
+/*     Gallery      */
 #Rewards {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   gap: 0.22cm;
-}
-.card a:hover {
-  background-color: rgb(255, 90, 7);
-  color: white;
 }
 
 #Reward-details {
@@ -99,10 +150,9 @@
 .box {
   display: flex;
   flex-direction: column;
-  width: 350px;
-  height: 700px;
+  width: 250px;
+  height: 500px;
   border: 4px ridge rgb(255, 90, 7);
-  margin: 10px;
   padding: 45px;
   text-align: justify;
   border-radius: 15px;
@@ -130,18 +180,10 @@
   box-shadow: 0 0 20px rgb(106, 19, 83);
   border: none;
 }
-.navbar-toggler-icon {
-  display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
-  vertical-align: middle;
-  background-image: var(--bs-navbar-toggler-icon-bg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  background-color: rgb(255, 90, 7);
-}
 @media (max-width: 700px) {
+  #desktop {
+    display: none;
+  }
   #about {
     flex-direction: column;
   }
@@ -159,9 +201,49 @@
     flex-direction: column;
   }
   .heading {
-    margin-top: 0.8cm;
+    margin-top: 2cm;
     font-size: 50px;
     color: rgb(255, 90, 7);
     font-family: "Belanosima", sans-serif;
+  }
+  .container-fluid {
+    height: 70px;
+    width: 700px;
+  }
+  #mobile {
+    padding: 0;
+    margin: 0;
+    display: none;
+    flex-basis: auto;
+    flex-grow: 1;
+    position: relative;
+    margin-top: 205px;
+    width: 700px;
+    left: -70;
+  }
+  #mobile ul {
+    display: block;
+    list-style: none;
+    background-color: #000000;
+    width: 700px;
+    justify-content: center;
+  }
+  #mobile a {
+    text-decoration: none;
+    color: rgb(255, 90, 7);
+    font-family: "Bruno Ace", cursive;
+    font-size: 25px;
+  }
+  button {
+    width: 0.5px;
+    height: 0.5px;
+    margin-left: 75%;
+    margin-bottom: 75px;
+    display: block;
+    position: fixed;
+  }
+  button img {
+    height: 0.5px;
+    width: 0.5px;
   }
 }

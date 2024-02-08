@@ -180,6 +180,12 @@ button {
   box-shadow: 0 0 20px rgb(106, 19, 83);
   border: none;
 }
+footer {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
 @media (max-width: 700px) {
   #desktop {
     display: none;

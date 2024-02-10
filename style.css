@@ -1,9 +1,12 @@
+/*     Home      */
 #homepage {
   background-color: #000000;
 }
 body {
   margin: 0px;
 }
+/*     Home      */
+/*     Nav bar      */
 #nav .container-fluid {
   display: flex;
   flex-wrap: inherit;
@@ -51,6 +54,8 @@ button {
   vertical-align: middle;
   margin-top: 1.4cm;
 }
+/*     Nav bar      */
+/*     titles      */
 .heading {
   margin-top: 2cm;
   text-align: center;
@@ -58,6 +63,8 @@ button {
   color: rgb(255, 90, 7);
   font-family: "Belanosima", sans-serif;
 }
+/*     titles      */
+/*     about      */
 #about {
   display: flex;
   flex-wrap: wrap;
@@ -84,6 +91,7 @@ button {
   height: 300px;
   border: 5px ridge black;
 }
+/*     about      */
 /*     Gallery      */
 #gallery {
   display: flex;
@@ -98,7 +106,7 @@ button {
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  border: 5px groove beige;
+  outline: 5px groove beige;
   width: 18rem;
   height: 22rem;
 }
@@ -115,9 +123,13 @@ button {
   display: flex;
   width: 7rem;
   height: 2rem;
-  border: 2px solid rgb(255, 90, 7);
+  outline: 2px solid rgb(255, 90, 7);
   border-radius: 0.2cm;
   align-items: center;
+}
+.card-body div:hover {
+  background-color: rgb(255, 90, 7);
+  color: white;
 }
 #Gallery .card a {
   font-size: 20;
@@ -125,15 +137,12 @@ button {
   color: rgba(49, 46, 46, 0.734);
   text-decoration: none;
 }
-.card a:hover {
-  background-color: rgb(255, 90, 7);
-  color: white;
-}
 #gallery h5 {
   font-size: 22;
   margin-left: 0.3cm;
 }
 /*     Gallery      */
+/*     Rewards      */
 #Rewards {
   display: flex;
   flex-wrap: wrap;
@@ -180,12 +189,7 @@ button {
   box-shadow: 0 0 20px rgb(106, 19, 83);
   border: none;
 }
-footer {
-  background-color: rgba(0, 0, 0, 0.2);
-  color: white;
-  justify-content: center;
-  align-items: center;
-}
+/*     Rewards      */
 @media (max-width: 700px) {
   #desktop {
     display: none;

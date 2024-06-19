@@ -1,9 +1,8 @@
-my website is about Cristiano Ronaldo its includes 4 pages abot him:
-1. Home page whit his photo
-2. About page short paragraph about his life and clubs that he played for.
-3. Skills and gallery page that includes a diffrent links that lead to his own pages and skills/interview videos.
-4. Reward page showing his diffrent awards claim.
-chllanges that I faced:
-it was first time what I use JavaScript and I had to choose a way to incloude it to my project and style the nav bar.
-new css properties:
-the Skills and gallery page was hard to make because it inculde a diffrent sizes of pictures and have a link and short title, similar to rewards. I had to make div in div to succes do this.
+My website is about Cristiano Ronaldo. It includes 4 pages about him:
+1. Home Page with his photo.
+2. About Page with a short paragraph about his life and the clubs he has played for.
+3. Skills and Gallery Page that includes different links leading to his own pages and skills/interview videos.
+4. Rewards Page showing his different awards and achievements.
+Challenges Faced:
+It was my first time using JavaScript, and I had to choose a way to include it in my project and style the navigation bar.
+New CSS Properties: The Skills and Gallery page was difficult to create because it includes different sizes of pictures and has links and short titles, similar to the Rewards page. I had to use nested divs to successfully achieve this layout.
